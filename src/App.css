@@ -1,0 +1,167 @@
+ /* General Styling */
+body {
+  background-color: #eee0cb;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #344e41;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #3a5a40;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5rem;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Search Bar Container */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #a3b18a;
+  padding: 12px 20px;
+  border-radius: 50px; /* Rounded edges */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #3a5a40;
+  max-width: 650px;
+  margin: 20px auto; /* Center the search bar */
+}
+
+/* Search Icon */
+.search-bar .fa-search {
+  color: #344e41;
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+/* Search Input Field */
+.search-bar input[type="text"] {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px; /* Rounded edges */
+  font-size: 1rem;
+  color: #344e41;
+  background-color: #eee0cb;
+  outline: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-bar input[type="text"]::placeholder {
+  color: #3a5a40;
+}
+
+/* Search Input Focus Style */
+.search-bar input[type="text"]:focus {
+  box-shadow: 0 0 5px #588157;
+}
+
+/* Search Button */
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #588157;
+  color: #dad7cd;
+  border: none;
+  border-radius: 50px; /* Rounded edges */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-left: 10px; /* Space between input and button */
+}
+
+.search-bar button:hover {
+  background-color: #3a5a40;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+/* User Profile Section */
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #dad7cd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image */
+.user-profile img {
+  width: 120px; /* Adjusted size */
+  height: 120px; /* Adjusted size */
+  border-radius: 50%; /* Circle shape */
+  object-fit: cover;
+  border: 3px solid #3a5a40;
+  margin-bottom: 15px;
+}
+
+/* Username */
+.user-profile h2 {
+  color: #344e41;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* Additional Info */
+.user-profile p {
+  color: #588157;
+  font-size: 1rem;
+}
+
+/* Repositories List Container */
+.repositories-list {
+  max-height: 300px; /* Limit the height to create space for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #dad7cd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #3a5a40;
+}
+
+/* Repository Item */
+.repository-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #a3b18a;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.repository-item:hover {
+  background-color: #588157;
+}
+
+.repository-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #344e41;
+}
+
+.repository-item p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #3a5a40;
+}
+
+/* Scrollbar Styling */
+.repositories-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.repositories-list::-webkit-scrollbar-thumb {
+  background-color: #3a5a40;
+  border-radius: 4px;
+}
+
+.repositories-list::-webkit-scrollbar-track {
+  background-color: #eee0cb;
+  border-radius: 4px;
+}
